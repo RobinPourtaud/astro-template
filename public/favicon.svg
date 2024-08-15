@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" viewBox="0 0 375 374.999991" preserveAspectRatio="xMidYMid meet" version="1.0" class="w-12 h-12">
+        <defs>
+            <filter x="0%" y="0%" width="100%" height="100%" id="id1">
+                <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" color-interpolation-filters="sRGB"></feColorMatrix>
+            </filter>
+            <clipPath id="id2">
+                <path d="M 46 81 L 339.140625 81 L 339.140625 374.996094 L 46 374.996094 Z M 46 81 " clip-rule="nonzero"></path>
+            </clipPath>
+            <mask id="id3">
+                <g filter="url(#id1)">
+                    <rect x="-37.5" width="450" fill="#000000" y="-37.499999" height="449.999989" fill-opacity="0.698"></rect>
+                </g>
+            </mask>
+            <clipPath id="id4">
+                <path d="M 0.320312 1 L 293.140625 1 L 293.140625 293.996094 L 0.320312 293.996094 Z M 0.320312 1 " clip-rule="nonzero"></path>
+            </clipPath>
+            <clipPath id="id5">
+                <rect x="0" width="294" y="0" height="294"></rect>
+            </clipPath>
+            <clipPath id="id6">
+                <path d="M 45 0 L 339.140625 0 L 339.140625 294 L 45 294 Z M 45 0 " clip-rule="nonzero"></path>
+            </clipPath>
+            <mask id="id7">
+                <g filter="url(#id1)">
+                    <rect x="-37.5" width="450" fill="#000000" y="-37.499999" height="449.999989" fill-opacity="0.698"></rect>
+                </g>
+            </mask>
+            <clipPath id="id8">
+                <path d="M 1 0 L 294.140625 0 L 294.140625 293 L 1 293 Z M 1 0 " clip-rule="nonzero"></path>
+            </clipPath>
+            <clipPath id="id9">
+                <rect x="0" width="295" y="0" height="294"></rect>
+            </clipPath>
+        </defs>
+        <g clip-path="url(#id2)">
+            <g mask="url(#id3)">
+                <g transform="matrix(1, 0, 0, 1, 46, 81)">
+                    <g clip-path="url(#id5)">
+                        <g clip-path="url(#id4)">
+                            <path fill="#8b5cf6" d="M 187.726562 1.398438 C 215.902344 1.398438 242.390625 12.359375 262.3125 32.265625 C 282.875 52.808594 293.160156 79.796875 293.160156 106.78125 C 293.160156 133.765625 282.875 160.753906 262.3125 181.296875 L 180.441406 263.09375 C 160.519531 283 134.027344 293.960938 105.855469 293.960938 C 77.679688 293.960938 51.191406 283 31.269531 263.09375 C -9.859375 222.007812 -9.859375 155.152344 31.269531 114.0625 L 113.140625 32.265625 C 133.0625 12.359375 159.550781 1.398438 187.726562 1.398438 Z M 187.726562 1.398438 " fill-opacity="1" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g clip-path="url(#id6)">
+            <g mask="url(#id7)">
+                <g transform="matrix(1, 0, 0, 1, 45, 0)">
+                    <g clip-path="url(#id9)">
+                        <g clip-path="url(#id8)">
+                            <path fill="#d946ef" d="M 106.855469 0.03125 C 135.03125 0.03125 161.519531 10.992188 181.441406 30.894531 L 263.3125 112.695312 C 283.875 133.238281 294.160156 160.222656 294.160156 187.210938 C 294.160156 214.195312 283.875 241.183594 263.3125 261.726562 C 243.390625 281.632812 216.902344 292.59375 188.726562 292.59375 C 160.550781 292.59375 134.0625 281.632812 114.140625 261.726562 L 32.269531 179.929688 C -8.859375 138.839844 -8.859375 71.984375 32.269531 30.894531 C 52.191406 10.992188 78.679688 0.03125 106.855469 0.03125 Z M 106.855469 0.03125 " fill-opacity="1" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>

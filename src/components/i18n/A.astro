@@ -1,0 +1,15 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { getLocalizedPathname } from "../../i18n/utils";
+
+type Props = HTMLAttributes<"a">;
+
+const { href, class: className, ...props } = Astro.props;
+const lang = Astro.params?.lang || "en";
+
+const localizedHref = getLocalizedPathname(String(href), lang);
+---
+
+<a href={localizedHref} class:list={[className]} {...props}>
+  <slot />
+</a>

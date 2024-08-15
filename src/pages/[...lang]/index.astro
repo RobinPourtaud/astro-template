@@ -1,0 +1,20 @@
+---
+import Layout from "@layouts/Layout.astro";
+import T from "@components/i18n/T.astro";
+
+export function getStaticPaths() {
+  return [undefined, "fr", "ja"].map((lang) => {
+    return { params: { lang } };
+  });
+}
+---
+
+<Layout>
+  <h1>
+    <T text="site.title" />
+  </h1>
+
+  <p>
+    <T text="site.description" />
+  </p>
+</Layout>

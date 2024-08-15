@@ -1,0 +1,49 @@
+---
+import A from "@components/i18n/A.astro";
+import T from "@components/i18n/T.astro";
+---
+
+<A
+    href="/"
+    class="text-xl group text-blue-500 font-black font-mono tracking-tighter flex items-center space-x-2 transition-colors duration-300"
+>
+    <span
+        class="brackets-animate-ltr mx-2 group-hover:text-pink-600 group-hover:-translate-x-7"
+        >「</span
+    >
+    <T text="site.title" />
+    <span
+        class="brackets-animate-rtl group-hover:text-pink-600 group-hover:translate-x-2"
+        >」</span
+    >
+</A>
+
+<style>
+    @keyframes brackets-move-right {
+        0% {
+            transform: translateX(-10px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes brackets-move-left {
+        0% {
+            transform: translateX(10px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .brackets-animate-rtl {
+        animation: brackets-move-right 2s ease-out forwards;
+    }
+    .brackets-animate-ltr {
+        animation: brackets-move-left 2s ease-out forwards;
+    }
+</style>

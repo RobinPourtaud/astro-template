@@ -1,0 +1,13 @@
+---
+const { text } = Astro.props;
+import { useTranslations } from "@i18n/utils";
+
+const defaultLang = Astro.params?.lang || "en";
+
+export function translator(toTranslate: string, lang?: string): string {
+    const t = useTranslations(lang);
+    return t(toTranslate);
+}
+---
+
+{translator(text, defaultLang)}

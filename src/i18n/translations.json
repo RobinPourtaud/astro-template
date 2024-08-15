@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": {
+      "en": "Site Title",
+      "fr": "Titre du site",
+      "ja": "サイトのタイトル"
+    },
+    "description": {
+      "en": "Template Description",
+      "fr": "Description du modèle",
+      "ja": "テンプレートの説明"
+    },
+    "github": {
+      "en": "https://github.com"
+    },
+    "admin": {
+      "en": "Robin Pourtaud"
+    }
+  },
+  "footer": {
+    "privacy": {
+      "en": "https://pourtaud.dev/page/privacy"
+    }
+  }
+}

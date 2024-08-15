@@ -1,0 +1,54 @@
+<button
+    id="themeToggle"
+    class="cursor-pointer p-2 transition ease-in-out duration-200 flex justify-center rounded-lg hover:bg-slate-700 hover:shadow-lg"
+    transition:persist
+>
+    <svg
+        class="block dark:hidden"
+        fill="currentColor"
+        width="24px"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+        ></path>
+    </svg>
+
+    <svg
+        class="hidden dark:block"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        ><path
+            d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+        ></path></svg
+    >
+</button>
+
+<script is:inline>
+    function light() {
+        localStorage.theme = "light";
+        document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("dark");
+    }
+    function dark() {
+        localStorage.theme = "dark";
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+    }
+    function toggleTheme() {
+        if (localStorage.theme === "dark") {
+            light();
+        } else {
+            dark();
+        }
+    }
+    document
+        .getElementById("themeToggle")
+        .addEventListener("click", toggleTheme);
+</script>

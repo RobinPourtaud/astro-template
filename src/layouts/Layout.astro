@@ -1,0 +1,42 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { ViewTransitions } from "astro:transitions";
+
+import BaseHead from "@components/head/BaseHead.astro";
+import Footer from "@components/footer/BaseFooter.astro";
+
+const { title, description } = Astro.props;
+let finalTitle = title;
+let finalDescription = description;
+
+const { lang } = Astro.params;
+const finalLang = lang || "en";
+import { useTranslations } from "@i18n/utils";
+import BaseHeader from "@components/header/BaseHeader.astro";
+const t = useTranslations(lang);
+
+if (!finalTitle) {
+  finalTitle = t("site.title");
+}
+if (!finalDescription) {
+  finalDescription = t("site.description");
+}
+---
+
+<html lang={finalLang} class="dark">
+  <head>
+    <BaseHead
+      lang={finalLang}
+      title={finalTitle}
+      description={finalDescription}
+    />
+    <ViewTransitions />
+  </head>
+  <body class="w-full items-center bg-background">
+    <BaseHeader />
+    <main class="min-h-screen z-20 flex justify-center">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

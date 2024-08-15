@@ -1,0 +1,9 @@
+---
+const today = new Date();
+import T from "@components/i18n/T.astro";
+---
+
+<footer class="text-center text-sm text-gray-500 my-8">
+	&copy; {today.getFullYear()}
+	<T text="site.title" />
+</footer>
