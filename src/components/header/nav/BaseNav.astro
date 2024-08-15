@@ -1,5 +1,5 @@
 ---
-import { LanguageSwitch } from "@components/header/nav/LanguageSwitch";
+import LanguageSwitch from "@components/header/nav/LanguageSwitch.astro";
 import { useTranslations } from "@i18n/utils";
 import Logo from "./Logo.astro";
 import DarkMode from "./DarkMode.astro";
@@ -35,6 +35,6 @@ const t = useTranslations(lang);
             >
         </a>
         <DarkMode />
-        <LanguageSwitch currentUrl={String(currentUrl)} client:load />
+        <LanguageSwitch currentUrl={String(currentUrl)} />
     </div>
 </nav>

@@ -1,0 +1,51 @@
+---
+import { getLocalizedPathname } from "@i18n/utils";
+import { languages } from "@i18n/ui";
+const currentUrl = Astro.props.currentUrl;
+---
+
+<style>
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ .dropdown-content {
+        display: block;
+    }
+</style>
+
+<div class="relative inline-block">
+    <label class="flex items-center p-2 cursor-pointer" for="dropdown-toggle">
+        <span class="sr-only">Switch language</span>
+        <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+            ></path>
+        </svg>
+    </label>
+    <input type="checkbox" id="dropdown-toggle" />
+    <div
+        class="dropdown-content absolute hidden z-10 shadow-2xl bg-background rounded-lg -mx-14 overflow-hidden"
+    >
+        <div class="px-4 py-2 text-sm font-semibold">Languages</div>
+        <hr class="border-gray-200" />
+        {
+            Object.entries(languages).map(([lang, label]) => (
+                <a
+                    href={getLocalizedPathname(currentUrl, lang)}
+                    class="block px-4 py-2 text-sm  hover:bg-gray-100/20"
+                >
+                    {label}
+                </a>
+            ))
+        }
+    </div>
+</div>
